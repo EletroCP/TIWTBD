@@ -11,11 +11,11 @@ const suffix = {
 
 const options = {
   host: process.env.HOSTNAME || process.env.MYSQL_HOST || 'localhost',
-  port: process.env.MYSQL_PORT || '3306',
+  port: process.env.MYSQL_PORT || '3316',
   database: 
     `${process.env.MYSQL_DB_NAME || 'TIWTDB'}${suffix[environment] || suffix.test}`,
   username: process.env.MYSQL_USER || 'root',
-  password: process.env.MYSQL_PASSWORD || '1234',
+  password: process.env.MYSQL_PASSWORD || 'password',
   dialect: 'mysql',
   dialectOptions: {
     timezone: 'Z',
